@@ -23,7 +23,7 @@ The first instructions are:
 0	ubyte&0xFC		=0x94	OpenPGP Secret Key
 >&-1	use			primary_key_length_old
 ```
-meaning that is the first byte equals to `0xC6`, print `OpenPGP Public Key` and call the `primary_key_length_new` subroutine. Otherwise, the call to the subroutine will be skipped and the next check will be performed. 
+meaning that if the first byte equals to `0xC6`, print `OpenPGP Public Key` and call the `primary_key_length_new` subroutine. Otherwise, the call to the subroutine will be skipped and the next check will be performed. 
 
 For `560.13`, the fourth check suceeds, resulting in "OpenPGP Secret Key" being printed. The 6 most significant bits of the first byte were compared to a given value. As soon as at least a message is printed, `file` stops checking other file format. Consequently, random data files will have 4/256 = 1.5625 % of resulting in "OpenPGP Secret Key" being printed.
 
