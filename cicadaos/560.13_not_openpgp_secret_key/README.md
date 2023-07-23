@@ -50,4 +50,4 @@ $ echo -ne "\x96\x8e" > /tmp/experiment ; file /tmp/experiment
 The binary pgp key format was added to `file` in 2020 ([git blame](https://github.com/file/file/blob/269b5fc0fb81631e41458fe3a63254d5593335e4/magic/Magdir/pgp-binary-keys)), meaning that it's unlikely that 3301 purposely chose the first byte to result in a false positive.
 
 ## Contact
-`tweqx`
+`Mae3301#6221`, `tweqx`
