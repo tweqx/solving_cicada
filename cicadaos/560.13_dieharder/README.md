@@ -29,7 +29,7 @@ Two tests were conducted to check this hypothesis:
   If the tests (without limiting the number of samples) were working correctly, the p-values should be uniformly distributed. An Anderson-Darling test was used to check for this. For both failing tests, the p-value obtained was 0%. This invalidates the null-hypothesis and thus proves that Dieharder with default parameters is not reliable on such small files.
 
 ## Contact & Links
-`iiisak`, `tweqx`
+`iiisak`, `Mae3301#6221`, `tweqx`
 
 Investigations happened on the CicadaSolvers Discord server. Links:
 - [Initial messages](https://discord.com/channels/572330844056715284/615334603049271322/1130379023172780032)
