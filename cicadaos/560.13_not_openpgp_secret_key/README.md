@@ -41,7 +41,7 @@ $ gpg --export-secret-key > /tmp/secret_key ; file /tmp/secret_key ; rm /tmp/sec
 /tmp/secret_key: OpenPGP Secret Key Version 4, Created XXX XXX XX XX:XX:XX XXXX, RSA (Encrypt or Sign, 4096 bits); User ID; Signature; OpenPGP Certificate
 ```
 
-Actually, it's possible to replicate the same output just by using a file made of 2 bytes (as for only 1 byte, `file` reports it a `very short file (no magic)`):
+Actually, it's possible to replicate the same output just by using a file made of 2 bytes (as for only 1 byte, `file` reports it as a `very short file (no magic)`):
 ```
 $ echo -ne "\x96\x8e" > /tmp/experiment ; file /tmp/experiment
 /tmp/experiment: OpenPGP Secret Key
