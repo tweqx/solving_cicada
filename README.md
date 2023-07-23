@@ -13,7 +13,7 @@ There is a huge sampling biais in the way solving attempts are added to this lis
 Contributions are welcome, either by openning [an issue](https://github.com/tweqx/solving_cicada/issues) or by asking nicely to `tweqx` on Discord.
 
 ### Cicada OS
-* [`560.13` is not an OpenPGP Secret Key](./cicadaos/560.13_not_openpgpg_secret_key/README.md)
+* [`560.13` is not an OpenPGP Secret Key](./cicadaos/560.13_not_openpgp_secret_key/README.md)
   
   `file` reports `560.13` has being an "OpenPGP Secret Key". This is a false positive.
 
