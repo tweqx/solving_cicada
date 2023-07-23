@@ -16,5 +16,6 @@ Contributions are welcome, either by openning [an issue](https://github.com/tweq
 * [`560.13` is not an OpenPGP Secret Key](./cicadaos/560.13_not_openpgp_secret_key/README.md)
   
   `file` reports `560.13` has being an "OpenPGP Secret Key". This is a false positive.
+* [`560.13` cannot be discriminated as non-random by the Dieharder test suite](./cicadaos/560.13_dieharder/README.md)
 
-  Contact: `tweqx`
+  Running the RNG test suite "Dieharder" on `560.13` results in several tests failing, which should indicate that the file content is not random data. It was shown that `560.13` is not long enough and the data reuse strategy used by Dieharder to compensate results in the test failures being not significant.
