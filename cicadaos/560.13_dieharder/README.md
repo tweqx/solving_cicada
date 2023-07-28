@@ -28,6 +28,8 @@ Two tests were conducted to check this hypothesis:
 
   If the tests (without limiting the number of samples) were working correctly, the p-values should be uniformly distributed. An Anderson-Darling test was used to check for this. For both failing tests, the p-value obtained was 0%. This invalidates the null-hypothesis and thus proves that Dieharder with default parameters is not reliable on such small files.
 
+Interestingly, doing both (limiting the number of samples in order not to have rewinds and sampling 100 files from `/dev/random`) results, after application of the Anderson-Darling test, in a p-value less than 0.01 for the GCD test. This suggests that the two failing tests do not even work on random files for such a small number of samples.
+
 ## Contact & Links
 `iiisak`, `Mae3301#6221`, `tweqx`
 
